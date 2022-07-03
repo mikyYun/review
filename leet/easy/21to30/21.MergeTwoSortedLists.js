@@ -17,8 +17,7 @@ const mergeTwoLists = (list1, list2) => {
   // list2.val
   // console.log(list1.val, list1.next)
   // if .next is null -> compare with self
-  if (list1 == null) return list2; // if list1 is null -> rest nodes = list2
-  if (list2 == null) return list1; // if list2 is null -> rest nodes = list1
+ 
   // lower node
   if (list1.val < list2.val) {
     // update list1.next
