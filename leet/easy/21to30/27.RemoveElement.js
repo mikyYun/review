@@ -2,10 +2,10 @@ const removeElement = (nums, val) => {
   // failed approach
   // return nums = nums.filter(num => num !== val);
 
-  for (let i = 0; i < nums.length; i ++) {
+  for (let i = 0; i < nums.length; i++) {
     if (nums[i] === val) {
-      nums.splice(i, 1)
-      i --
+      nums.splice(i, 1);
+      i--;
     }
   }
 };
