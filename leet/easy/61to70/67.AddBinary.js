@@ -24,8 +24,8 @@ const addBinary = (a, b) => {
     }
     reverseLong[i] = sumNums % 2;
   }
-  if (addOne === 1) reverseLong.unshift(1)
-  return reverseLong.join("")
+  if (addOne === 1) reverseLong.unshift(1);
+  return reverseLong.join("");
   //////// FAILED /////////
   // const add = a + b;
   // for (let i = add.length - 1; i >= 0; i --) {
