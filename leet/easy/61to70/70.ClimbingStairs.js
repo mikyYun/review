@@ -11,7 +11,16 @@ const climbStairs = (n) => {
   if (n <= 2) return n;
   // const distinctWays = climbStairs(n - 1) + climbStairs(n - 2)
   // return distinctWays; // time limit exceeded with inptu 45
-  
+  // do increment instead recursion
+  let prev = 2;
+  let prevOfPrev = 1;
+  for (let i = 3; i <= n; i++) {
+    const now = prev + prevOfPrev;
+    prevOfPrev = prev;
+    prev = now;
+  }
+
+  return prev;
 };
-const n = 45;
-console.log(climbStairs(n))
+const n = 20;
+console.log(climbStairs(n));
