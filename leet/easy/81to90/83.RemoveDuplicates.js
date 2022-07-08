@@ -7,7 +7,7 @@ const deleteDuplicates = (head) => {
   // if head.val && head.next => run
   // else return head (head.val = exist, head.val = undefined)
   // edge
-  if(head === null || head.next ===null) return head;
+  if (head === null || head.next === null) return head;
   if (head.next !== null) {
     if (head.val === head.next.val) {
       head = deleteDuplicates(head.next);
