@@ -45,7 +45,6 @@ var fillCups = function (amount) {
   const secondMaxIndex = amount.findIndex((num, index) => {
     return num === secondMax && index !== maxIndex;
   });
-  console.log(amount, maxIndex, secondMax, secondMaxIndex)
 
   amount[maxIndex] -= 1;
   amount[secondMaxIndex] -= 1;
