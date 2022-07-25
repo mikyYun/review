@@ -12,10 +12,14 @@
  * @return {boolean}
  */
 
-// APPROACH
-// if .val exist ? compare
-// if .left exist ? recursion
-// if .right exist ? recursion ?
+//  Approach
+
+//  - return false to all false cases : invalid p or q, not equal p.val and q.val
+
+//  - if not edge cases, check left and right
+
+//  - recursion is true, return true
+
 const isSameTree = function (p, q) {
   // edge cases return false
   if ((!p && q) || (p && !q) || (p.val !== q.val)) return false;
